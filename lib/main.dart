@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(MyApp());
@@ -71,9 +72,24 @@ class Foreground extends StatelessWidget {
       ),
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: 18),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [],
+        child: DefaultTextStyle(
+          style: GoogleFonts.raleway(color: Colors.white),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              SizedBox(height: 50),
+              Text(
+                'Hello Mickael',
+                style: TextStyle(fontSize: 30),
+              ),
+              SizedBox(height: 5),
+              Text(
+                'Check the weather by the city',
+                style: TextStyle(fontSize: 15, fontWeight: FontWeight.w700)
+              ),
+              SizedBox(height: 35),
+            ],
+          ),
         ),
       ),
     );
