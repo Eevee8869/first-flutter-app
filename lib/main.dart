@@ -35,8 +35,47 @@ class HomeScreen extends StatelessWidget {
             width: width,
             color: Color(0xFF2D2C35),
           ),
-        )
+        ),
+        Foreground(),
       ],
+    );
+  }
+}
+
+class Foreground extends StatelessWidget {
+  const Foreground({
+    Key key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.black54,
+      appBar: AppBar(
+        elevation: 0,
+        backgroundColor: Colors.transparent,
+        iconTheme: IconThemeData(color: Colors.white),
+        leading: IconButton(
+          icon: Icon(Icons.menu),
+          onPressed: () => {},
+        ),
+        actions: [
+          IconButton(
+              icon: CircleAvatar(
+                backgroundImage:
+                    NetworkImage('https://github.com/mickaelxd.png'),
+                backgroundColor: Colors.black26,
+              ),
+              onPressed: () => {})
+        ],
+      ),
+      body: Padding(
+        padding: EdgeInsets.symmetric(horizontal: 18),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [],
+        ),
+      ),
     );
   }
 }
