@@ -50,6 +50,10 @@ class Foreground extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var inputBorder = OutlineInputBorder(
+        borderSide: BorderSide(color: Colors.white),
+        borderRadius: BorderRadius.all(Radius.circular(30.0)));
+
     return Scaffold(
       backgroundColor: Colors.black54,
       appBar: AppBar(
@@ -83,11 +87,24 @@ class Foreground extends StatelessWidget {
                 style: TextStyle(fontSize: 30),
               ),
               SizedBox(height: 5),
-              Text(
-                'Check the weather by the city',
-                style: TextStyle(fontSize: 15, fontWeight: FontWeight.w700)
-              ),
+              Text('Check the weather by the city',
+                  style: TextStyle(fontSize: 15, fontWeight: FontWeight.w700)),
               SizedBox(height: 35),
+              TextField(
+                decoration: InputDecoration(
+                    border: inputBorder,
+                    enabledBorder: inputBorder,
+                    focusedBorder: inputBorder,
+                    hintText: 'Search city',
+                    hintStyle: TextStyle(
+                        color: Colors.white,
+                        fontSize: 12,
+                        fontWeight: FontWeight.w600),
+                    suffixIcon: Icon(
+                      Icons.search,
+                      color: Colors.white,
+                    )),
+              ),
             ],
           ),
         ),
