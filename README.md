@@ -1,16 +1,12 @@
-# my_flutter_app
+# Flutter Weather App
 
-A new Flutter project.
+A Flutter project made to practice.
 
-## Getting Started
+## Screenshot
 
-This project is a starting point for a Flutter application.
+![Screenshot](./.github/assets/Simulator%20Screen%20Shot%20-%20iPhone%2012%20Pro%20Max%20-%202020-12-07%20at%2001.16.48.png)
 
-A few resources to get you started if this is your first Flutter project:
+## About the Project
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+This project aimed to create an App in practice. Flutter technology and its variants were used.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
